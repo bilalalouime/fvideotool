@@ -2,10 +2,11 @@
 import requests
 import re
 
-# Don't use a samrtphone browser user-agent (i'm using firefox for windows user-agent)
-headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0"}
+
 #Video url
 v_url = 'https://www.facebook.com/DimaRapTV/videos/moro-khofiatan/305658944351064/?_rdc=1&_rdr'
+# Don't use a samrtphone browser user-agent (i'm using firefox for windows user-agent)
+headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0"}
 # Send an http request using GET 
 r =requests.get(v_url,headers=headers)
 # Save response data as text
